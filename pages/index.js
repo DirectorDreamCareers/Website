@@ -1,29 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Slider from 'react-slick'
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import Supports from '../components/Supports';
 import Clients from '../components/Clients';
-
-
-const clients = [
-  {
-    img: "https://dreamcareers.in/img/patner_1.png",
-  },
-  {
-    img: "https://dreamcareers.in/img/patner_2.png",
-  },
-  {
-    img: "https://dreamcareers.in/img/patner_3.png",
-  },
-  {
-    img: "https://dreamcareers.in/img/patner_4.png",
-  },
-  {
-    img: "https://dreamcareers.in/img/patner_5.png",
-  },
-];
 
 const settigs = {
   infinite: true,

@@ -2,6 +2,7 @@ import React from 'react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import {Fragment} from 'react'
 import { Popover, Transition } from '@headlessui/react'
+import Image from 'next/image'
 
 function Navbar() {
     const navigation = [
@@ -21,11 +22,7 @@ function Navbar() {
                 <div className="flex items-center justify-between w-full md:w-auto">
                   <a href="#">
                     <span className="sr-only">Workflow</span>
-                    <img
-                      className="w-auto h-8 sm:h-10"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                      alt=""
-                    />
+                    <Image src='/img/workflow-mark-indigo-500.svg' width='43' height='40' />
                   </a>
                   <div className="flex items-center -mr-2 md:hidden">
                     <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white">
