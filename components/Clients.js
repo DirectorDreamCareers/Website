@@ -4,31 +4,37 @@ import Image from 'next/image'
 function Clients() {
   const clients = [
     {
+      key: "patner_1",
       img: "/img/patner_1.png",
       width: 148,
       height: 80
     },
     {
+      key: "patner_2",
       img: "/img/patner_2.png",
       width: 148,
       height: 80
     },
     {
+      key: "patner_3",
       img: "/img/patner_3.png",
       width: 148,
       height: 80
     },
     {
+      key: "patner_4",
       img: "/img/patner_4.png",
       width: 148,
       height: 80
     },
     {
+      key: "patner_5",
       img: "/img/patner_5.png",
       width: 148,
       height: 80
     },
     {
+      key: "patner_6",
       img: "/img/patner_6.png",
       width: 98,
       height: 80
@@ -45,7 +51,7 @@ function Clients() {
      <div className='flex justify-between'>
       {clients.map((ele)=>(
         // <Image className='h-12' src={ele.img} width={ele.width} height={ele.height} layout='intrinsic'/>
-        <img className='h-12' src={ele.img}/>
+        <img key={ele.key} className='h-12' src={ele.img}/>
       ))}
      </div>
     </div>
